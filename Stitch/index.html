@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch Story</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="divhelpText"><p class="helpText">Select a path to continue</p></div>
+        <img src="images/threeDoors.webp" alt="Background">
+        <img src="images/LeftDoor.png" class="door door-1" data-path="darkPath" data-message="'This path is pitch black. I can’t see what’s on the other side. Is it safe or dangerous? Will it lead me to something important?'">
+        <img src="images/MiddleDoor.png" class="door door-2" data-path="waterfall" data-message="'The sound of the waterfall is deafening. Maybe there's a way through it, but is it worth the risk?'">
+        <img src="images/RightDoor.PNG" class="door door-3" data-path="bigCave" data-message="'This cave is vast, and strange sounds echo from within. I can’t imagine what might be waiting for me.'">
+        <div id="hover-message"></div>
+        <div class="story-text">
+            <span class="word">Stitch stands at the entrance of an old cave on the island. </span>
+            <span class="word">Three paths lie before him. </span>
+            <span class="word">The first leads into a dark, shadowy passage, full of mystery. </span>
+            <span class="word">The second path leads to a powerful waterfall, its roar deafening. </span>
+            <span class="word">The third path enters a vast cave, where strange echoes fill the air. </span>
+            <span class="word">Each path promises adventure, but which will Stitch choose? </span>
+        </div>
+        
+        <img src="images/Stitch.png" class="stitch">
+    </div>
+
+    <div id="black-screen" class="black-screen">
+      <div class="story-message"></div>
+  </div>
+  
+  <div class="resultDiv"><p class="result" id="resultStory">THE RESULT</p></div>
+  <div id="choices-container" class="choices-container">
+      <div class="between" id="between"><span id="betweenText"></span></div>
+      <div class="choice" id="choice-1"></div>
+      <div class="choice" id="choice-2"></div>
+      <div class="choice" id="choice-3"></div>
+      <div class="choice" id="choice-4"></div>
+      <div class="choice" id="choice-5"></div>
+      <div class="choice" id="choice-6"></div>
+      <div class="choice" id="choice-Back"></div>
+  </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
